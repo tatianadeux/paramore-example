@@ -1,0 +1,510 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../font/Poppins-Light.ttf);
+}
+
+/*Classes Générales*/
+
+.resp {
+    width:100%;
+    height:auto;
+}
+
+.flex {
+    display:flex;
+}
+
+.spaceAround {
+    justify-content: space-around;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.vertical {
+    align-items: center;
+}
+
+.horizontal {
+    justify-content: center;
+}
+
+.border {
+    border : solid 1px black;
+}
+
+.center {
+    text-align: center;
+}
+
+/*Réglages Width*/
+.w10{
+    width:10%;
+}
+
+.w15 {
+    width:15%;
+}
+
+.w20{
+    width:20%;
+}
+
+.w40{
+    width:40%;
+}
+
+.d80 {
+    width:80%;
+    margin:0 auto;
+}
+
+.w100 {
+    width:100%;
+}
+
+/*Réglages Margin et Padding*/
+.p20 {
+    padding-top:20px;
+}
+
+.m25 {
+margin:25px 0;
+}
+
+.mLeft {
+    margin-left: 10%;
+} 
+
+/*Réglages Image*/
+.i15 {
+    height:15%;
+    width:15%;
+}
+
+.i20 {
+    width:20%;
+    height:20%;
+    margin:20px 0;
+}
+
+.i35 {
+    width:35%;
+    height:20%;
+    margin:20px 0;
+}
+
+
+
+/*Titres*/
+h1 {
+    font-family:'Nothing You Could Do', cursive;
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase; 
+    text-align: center;
+    padding:20px 0;
+    letter-spacing: 0.5rem;
+}
+
+h2 {
+    font-family: "Poppins";
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+}
+
+/*Entête*/
+#background {
+    background-image: url(../img/paramore5.jpeg);
+    background-size:cover;
+    height:100vh;
+}
+
+nav{
+    background:linear-gradient(to bottom,rgba(255,150,150,0.7),transparent);
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+#Menu {
+    width:100%;
+    padding:20px;
+    align-items:center;
+    list-style-type: none;
+}
+
+#Menu>li>a {
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 800;
+    font-size:1.5em;
+    color:black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#logoHaut {
+    position: absolute;
+    top :0;
+    left:50%;
+    transform: translateX(-50%);
+    width:8%;
+}
+
+#dLogoGauche, #logoGauche, #burger {
+    display: none;
+}
+
+ #bas {
+    height: 75px;
+    width:75px;
+    border-radius: 50px;
+    background-color: rgb(94,191,213);
+    position:absolute;
+    bottom:-3%;
+    right:3%;
+    animation:scale 2s infinite;
+}
+
+
+/*Section Live*/
+#iLive {
+    width: 40%;
+    padding-left:20px;
+}
+
+#LiveTour {
+    padding:3%;
+}
+
+#LiveTour>h1 {
+    text-align: left;
+    padding-left:40px;
+}
+
+#pLive {
+    width :50%;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/*Section Discographie*/
+#Discography {
+    margin:5% 0;
+}
+
+.cd {
+    overflow:hidden;
+}
+
+.cd:hover img{
+    transform:scale(1.5);
+    transition: ease;
+    transition-duration:1s;
+}
+
+#Discography>h2 {
+    display: none;
+} 
+
+/*Section Nouvel Album*/
+#newAlbum {
+    background-color: rgb(249,212,107);
+
+}
+
+#iNewAlbum {
+    width:20%;
+    margin:7%;
+}
+
+
+#bouton {
+    background-color: rgb(152,150,196);
+    border: solid 2px rgb(94,191,213);
+    border-radius:50px;
+    height:50px;
+    width:50%;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size:1.3em;
+    text-transform: uppercase;
+    color: rgb(249,212,107);
+    margin:0 auto;
+    text-align:center;
+}
+
+/*Section News*/
+
+#bgNews {
+    background:linear-gradient(to top, rgb(94,191,213),white);
+    padding:30px 0;
+}
+
+#Nouveautes>div {
+    justify-content: center;
+    align-items: center;
+}
+
+/*Réglages Paragraphe*/ 
+.paragraphe {
+    font-family: "Poppins", sans-serif;
+    font-size:1em;
+    width:30%;
+    margin:0 auto;
+}
+
+#p1 {
+    text-align: left;
+}
+
+#p2 {
+    text-align:right;
+}
+
+#p3 {
+    text-align: center;
+}
+
+/*Bas de Page*/
+footer {
+    background-color: rgb(94,191,213);
+    padding: 30px;
+    align-items: center;
+    position:relative;
+}
+
+#ReseauxSociaux {
+    list-style-type: none;
+}
+
+.rs {
+    align-items:center ;
+    width:30%;
+}
+#logoBas {
+   position:absolute;
+   bottom: -25%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width:8%;
+}
+
+li:last-child {
+    padding:8px 0;
+}
+
+@keyframes scale {
+    0% {
+
+        transform: translateY(-10%) scale(0.7);
+    }
+    50% {
+        transform: translateY(10%) scale(1.2);
+    }
+    100% {
+        transform: translateY(-10%) scale(0.7);
+    }
+}
+
+#chevron {
+    width:6%;
+}
+
+#chevron:hover {
+    animation: scale 1.5s infinite;
+}
+
+@keyframes bouton {
+    0% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+#bouton:hover {
+    animation: bouton 3s infinite;
+}
+
+
+@media screen and (max-width:576px) {
+
+    /*Navigation*/
+    #background {
+        background-image: url(../img/mobilewall.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #Menu {
+        position: fixed;
+        left: -100%;
+        top : 0;
+        flex-direction: column;
+        background:rgba(255,150,150,1);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        align-items: unset;
+    }
+
+    #Menu.active {
+        left: 0;
+    } 
+
+    #burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    #burger.active .trait:nth-child(2) {
+        opacity: 0;
+    }
+
+    #burger.active .trait:nth-child(1) {
+        transform: translateY(15px) rotate(45deg);
+    }
+
+    #burger.active .trait:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    #dLogoGauche {
+        display: block;
+    }
+
+    #logoGauche {
+        display: block;
+        width:13%;
+    }
+    
+    .trait  {
+        border: 1px white solid;
+        height:0;
+        list-style: none;
+        margin-bottom: 10px;
+        width: 35px;
+        margin-right:10px;
+        margin-top:10px
+    }
+
+    #burger>li:last-child {
+        padding:0;
+    }
+
+    #Menu>li {
+        padding:19%;
+    }
+
+    #logoHaut {
+        display: none;
+    }
+
+
+    /*Live Tour*/
+
+    #LiveTour>h1 {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #figureLT {
+        display: none;
+    }
+    
+    #articleLT {
+        display: block;
+    }
+
+    #iLive {
+        width: 100%;
+        padding-left:unset;
+    }
+
+    #pLive {
+        width:90%;
+        text-align:justify;
+        margin:0 auto;
+        padding-top:20px;
+    }
+
+    /*Dernier Album*/
+    #newAlbum {
+        display: block;
+        padding:30px 0;
+    }
+
+    #pNewAlbum {   
+        width:100%;
+        text-align: center;
+        padding-bottom:40px;
+    }
+
+    #pNewAlbum>h1 {
+        letter-spacing: 1rem;
+    }
+
+    #pNewAlbum>h2 {
+        display: none;
+    }
+
+    #iNewAlbum {
+        width:50%;
+        margin:0 auto;
+
+    }
+
+    /*Discographie*/
+    #Disco1, #BNE, #AL, #Nouveau2, #p2, #logoBas, #ReseauxSociaux  {
+        display: none;
+    }
+
+    #SelfTitled {
+        display: block;
+        width:75%;
+    }
+
+    /*Nouveautes*/
+    #Nouveau1 {
+        display: block;
+        width: 100%;
+    }
+
+    #p1 {
+        text-align: center;
+        width:90%;
+        margin:0 auto;
+    }
+
+    #iNouveau {
+        width:90%;
+        margin:0 auto;
+        padding:30px 0;
+    }
+
+    /*Bas de Page*/
+    #chevron {
+        margin:0 auto;
+    }
+}
+
+
